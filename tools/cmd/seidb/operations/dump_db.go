@@ -5,10 +5,10 @@ import (
 	"io/fs"
 	"os"
 
-	"github.com/sei-protocol/sei-db/config"
-	"github.com/sei-protocol/sei-db/ss"
-	"github.com/sei-protocol/sei-db/tools/cmd/seidb/benchmark"
-	"github.com/sei-protocol/sei-db/tools/utils"
+	"github.com/badrootd/sei-db/config"
+	"github.com/badrootd/sei-db/ss"
+	"github.com/badrootd/sei-db/tools/cmd/seidb/benchmark"
+	"github.com/badrootd/sei-db/tools/utils"
 	"github.com/spf13/cobra"
 )
 
