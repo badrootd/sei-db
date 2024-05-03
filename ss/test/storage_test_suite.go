@@ -9,7 +9,7 @@ import (
 
 	"fmt"
 
-	"github.com/sei-protocol/sei-db/ss/types"
+	"github.com/badrootd/sei-db/ss/types"
 )
 
 const (

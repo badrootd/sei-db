@@ -3,9 +3,9 @@ package operations
 import (
 	"fmt"
 
-	"github.com/sei-protocol/sei-db/config"
-	"github.com/sei-protocol/sei-db/ss"
-	"github.com/sei-protocol/sei-db/tools/cmd/seidb/benchmark"
+	"github.com/badrootd/sei-db/config"
+	"github.com/badrootd/sei-db/ss"
+	"github.com/badrootd/sei-db/tools/cmd/seidb/benchmark"
 	"github.com/spf13/cobra"
 )
 

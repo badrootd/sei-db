@@ -3,7 +3,7 @@ package memiavl
 import (
 	"errors"
 
-	"github.com/sei-protocol/sei-db/config"
+	"github.com/badrootd/sei-db/config"
 )
 
 type Options struct {

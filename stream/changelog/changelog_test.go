@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"testing"
 
+	"github.com/badrootd/sei-db/common/logger"
+	"github.com/badrootd/sei-db/proto"
 	"github.com/cosmos/iavl"
-	"github.com/sei-protocol/sei-db/common/logger"
-	"github.com/sei-protocol/sei-db/proto"
 	"github.com/stretchr/testify/require"
 	"github.com/tidwall/wal"
 )

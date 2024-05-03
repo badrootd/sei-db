@@ -5,9 +5,9 @@ import (
 	"io/fs"
 	"os"
 
-	"github.com/sei-protocol/sei-db/config"
-	"github.com/sei-protocol/sei-db/ss"
-	"github.com/sei-protocol/sei-db/tools/dbbackend"
+	"github.com/badrootd/sei-db/config"
+	"github.com/badrootd/sei-db/ss"
+	"github.com/badrootd/sei-db/tools/dbbackend"
 	"github.com/spf13/cobra"
 )
 
