@@ -2,12 +2,12 @@ package utils
 
 import "path/filepath"
 
-func GetCommitStorePath(homePath string) string {
-	return filepath.Join(homePath, "data", "committer.db")
+func GetCommitStorePath(dataDir string) string {
+	return filepath.Join(dataDir, "committer.db")
 }
 
-func GetStateStorePath(homePath string, backend string) string {
-	return filepath.Join(homePath, "data", backend)
+func GetStateStorePath(dataDir string, backend string) string {
+	return filepath.Join(dataDir, backend)
 }
 
 func GetChangelogPath(commitStorePath string) string {

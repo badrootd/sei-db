@@ -8,12 +8,12 @@ import (
 )
 
 func init() {
-	initializer := func(dir string, configs config.StateStoreConfig) (types.StateStore, error) {
-		dbHome := dir
+	initializer := func(dataDir string, configs config.StateStoreConfig) (types.StateStore, error) {
+		dbDir := dataDir
 		if configs.DBDirectory != "" {
-			dbHome = configs.DBDirectory
+			dbDir = configs.DBDirectory
 		}
-		return pebbledb.New(utils.GetStateStorePath(dbHome, configs.Backend), configs)
+		return pebbledb.New(utils.GetStateStorePath(dbDir, configs.Backend), configs)
 	}
 	RegisterBackend(PebbleDBBackend, initializer)
 }
