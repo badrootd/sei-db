@@ -9,8 +9,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/badrootd/sei-db/common/errors"
-	"github.com/badrootd/sei-db/sc/types"
+	"github.com/sei-protocol/sei-db/common/errors"
+	"github.com/sei-protocol/sei-db/sc/types"
 )
 
 const (

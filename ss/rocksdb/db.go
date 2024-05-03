@@ -9,12 +9,12 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/badrootd/sei-db/common/errors"
-	"github.com/badrootd/sei-db/config"
-	"github.com/badrootd/sei-db/proto"
-	"github.com/badrootd/sei-db/ss/types"
-	"github.com/badrootd/sei-db/ss/util"
 	"github.com/linxGnu/grocksdb"
+	"github.com/sei-protocol/sei-db/common/errors"
+	"github.com/sei-protocol/sei-db/config"
+	"github.com/sei-protocol/sei-db/proto"
+	"github.com/sei-protocol/sei-db/ss/types"
+	"github.com/sei-protocol/sei-db/ss/util"
 	"golang.org/x/exp/slices"
 )
 

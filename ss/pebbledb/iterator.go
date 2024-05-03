@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/badrootd/sei-db/ss/types"
 	"github.com/cockroachdb/pebble"
+	"github.com/sei-protocol/sei-db/ss/types"
 	"golang.org/x/exp/slices"
 )
 

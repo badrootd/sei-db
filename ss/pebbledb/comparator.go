@@ -5,8 +5,8 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/badrootd/sei-db/common/utils"
 	"github.com/cockroachdb/pebble"
+	"github.com/sei-protocol/sei-db/common/utils"
 )
 
 // MVCCComparer returns a PebbleDB Comparer with encoding and decoding routines

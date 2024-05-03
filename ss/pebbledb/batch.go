@@ -4,8 +4,8 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/badrootd/sei-db/common/errors"
 	"github.com/cockroachdb/pebble"
+	"github.com/sei-protocol/sei-db/common/errors"
 )
 
 type Batch struct {

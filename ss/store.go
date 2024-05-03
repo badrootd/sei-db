@@ -3,12 +3,12 @@ package ss
 import (
 	"fmt"
 
-	"github.com/badrootd/sei-db/common/logger"
-	"github.com/badrootd/sei-db/common/utils"
-	"github.com/badrootd/sei-db/config"
-	"github.com/badrootd/sei-db/proto"
-	"github.com/badrootd/sei-db/ss/types"
-	"github.com/badrootd/sei-db/stream/changelog"
+	"github.com/sei-protocol/sei-db/common/logger"
+	"github.com/sei-protocol/sei-db/common/utils"
+	"github.com/sei-protocol/sei-db/config"
+	"github.com/sei-protocol/sei-db/proto"
+	"github.com/sei-protocol/sei-db/ss/types"
+	"github.com/sei-protocol/sei-db/stream/changelog"
 )
 
 type BackendType string

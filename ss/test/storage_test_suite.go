@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/badrootd/sei-db/ss/types"
 	"github.com/cosmos/iavl"
+	"github.com/sei-protocol/sei-db/ss/types"
 	"github.com/stretchr/testify/suite"
 	"golang.org/x/exp/slices"
 )

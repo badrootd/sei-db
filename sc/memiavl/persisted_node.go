@@ -5,7 +5,7 @@ import (
 	"crypto/sha256"
 	"sort"
 
-	"github.com/badrootd/sei-db/common/utils"
+	"github.com/sei-protocol/sei-db/common/utils"
 )
 
 const (

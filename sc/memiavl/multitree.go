@@ -9,11 +9,11 @@ import (
 	"sort"
 
 	"github.com/alitto/pond"
-	"github.com/badrootd/sei-db/common/errors"
-	"github.com/badrootd/sei-db/common/utils"
-	"github.com/badrootd/sei-db/proto"
-	"github.com/badrootd/sei-db/stream/types"
 	"github.com/cosmos/iavl"
+	"github.com/sei-protocol/sei-db/common/errors"
+	"github.com/sei-protocol/sei-db/common/utils"
+	"github.com/sei-protocol/sei-db/proto"
+	"github.com/sei-protocol/sei-db/stream/types"
 	"golang.org/x/exp/slices"
 )
 

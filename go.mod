@@ -1,4 +1,4 @@
-module github.com/badrootd/sei-db
+module github.com/sei-protocol/sei-db
 
 go 1.19
 

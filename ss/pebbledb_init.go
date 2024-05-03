@@ -1,10 +1,10 @@
 package ss
 
 import (
-	"github.com/badrootd/sei-db/common/utils"
-	"github.com/badrootd/sei-db/config"
-	"github.com/badrootd/sei-db/ss/pebbledb"
-	"github.com/badrootd/sei-db/ss/types"
+	"github.com/sei-protocol/sei-db/common/utils"
+	"github.com/sei-protocol/sei-db/config"
+	"github.com/sei-protocol/sei-db/ss/pebbledb"
+	"github.com/sei-protocol/sei-db/ss/types"
 )
 
 func init() {
