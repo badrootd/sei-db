@@ -9,12 +9,12 @@ import (
 	"strings"
 	"sync"
 
+	errorutils "github.com/badrootd/sei-db/common/errors"
+	"github.com/badrootd/sei-db/config"
+	"github.com/badrootd/sei-db/proto"
+	"github.com/badrootd/sei-db/ss/types"
 	"github.com/cockroachdb/pebble"
 	"github.com/cockroachdb/pebble/bloom"
-	errorutils "github.com/sei-protocol/sei-db/common/errors"
-	"github.com/sei-protocol/sei-db/config"
-	"github.com/sei-protocol/sei-db/proto"
-	"github.com/sei-protocol/sei-db/ss/types"
 	"golang.org/x/exp/slices"
 )
 
@@ -49,6 +49,14 @@ type Database struct {
 	// Used in pruning to skip over stores that have not been updated recently
 	storeKeyDirty sync.Map
 }
+type NoopLogger struct {
+}
+
+func (NoopLogger) Infof(format string, args ...interface{}) {
+}
+
+func (NoopLogger) Fatalf(format string, args ...interface{}) {
+}
 
 func New(dataDir string, config config.StateStoreConfig) (*Database, error) {
 	cache := pebble.NewCache(1024 * 1024 * 32)
@@ -65,6 +73,8 @@ func New(dataDir string, config config.StateStoreConfig) (*Database, error) {
 		MemTableSize:                64 << 20,
 		MemTableStopWritesThreshold: 4,
 	}
+
+	opts.Logger = NoopLogger{}
 
 	for i := 0; i < len(opts.Levels); i++ {
 		l := &opts.Levels[i]

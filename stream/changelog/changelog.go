@@ -6,10 +6,10 @@ import (
 	"os"
 	"path/filepath"
 
-	errorutils "github.com/sei-protocol/sei-db/common/errors"
-	"github.com/sei-protocol/sei-db/common/logger"
-	"github.com/sei-protocol/sei-db/proto"
-	"github.com/sei-protocol/sei-db/stream/types"
+	errorutils "github.com/badrootd/sei-db/common/errors"
+	"github.com/badrootd/sei-db/common/logger"
+	"github.com/badrootd/sei-db/proto"
+	"github.com/badrootd/sei-db/stream/types"
 	"github.com/tidwall/wal"
 )
 
